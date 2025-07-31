@@ -50,3 +50,25 @@ button {
 button:hover {
   background-color: #ff66a3;
 }
+
+#love-container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  background-color: #fff; /* atau latar apapun */
+}
+
+.love {
+  position: absolute;
+  top: -2rem;
+  font-size: 2rem;
+  animation: fall linear forwards;
+  pointer-events: none;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+    opacity: 1;
+  }
+}
